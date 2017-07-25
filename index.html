@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Venta de Pasjes</title>
+    </head>
+    <body>
+        <h1 align="center">Venta de Pasajes</h1>
+        <h2>Asientos</h2>
+        <table border="1">
+            <tr>
+                <td><button>4</button></td>
+                <td><button>8</button></td>
+                <td><button>12</button></td>
+                <td><button>16</button></td>
+                <td><button>20</button></td>
+                <td><button>24</button></td>
+                <td><button>28</button></td>
+                <td><button>32</button></td>
+            </tr>
+            <tr>
+                <td><button>3</button></td>
+                <td><button>7</button></td>
+                <td><button>11</button></td>
+                <td><button>15</button></td>
+                <td><button>19</button></td>
+                <td><button>23</button></td>
+                <td><button>27</button></td>
+                <td><button>31</button></td>
+            </tr>
+            <tr>
+                <td><button>2</button></td>
+                <td><button>6</button></td>
+                <td><button>10</button></td>
+                <td><button>14</button></td>
+                <td><button>18</button></td>
+                <td><button>22</button></td>
+                <td><button>26</button></td>
+                <td><button>30</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>5</button></td>
+                <td><button>9</button></td>
+                <td><button>13</button></td>
+                <td><button>17</button></td>
+                <td><button>21</button></td>
+                <td><button>25</button></td>
+                <td><button>29</button></td>
+            </tr>
+        </table>
+        <p>
+            DNI: <input type="text" id="dniBuscar">
+            <input type="button" value="Buscar" id="btnBuscar" onclick="bus.buscar()">
+        </p>
+        <hr>
+        <p>Asiento: <input type="text" id="asiento" disabled></p>
+        <p>Nombre: <input type="text" id="nombre"></p>
+        <p>Apellido: <input type="text" id="apellido"></p>
+        <p>DNI: <input type="text" id="dni"></p>
+        <p>
+            <input type="button" value="Reservar" id="btnReservar" onclick="bus.reservar()">
+            <input type="button" value="Cancelar" id="btnCancelar" onclick="bus.cancelar()">
+        </p>
+        <hr>
+        <p><input type="button" value="Listar" id="btnListar" onclick="bus.listar()"></p>
+        <div id="listar"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
